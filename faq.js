@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".faq-question").forEach((button) => button.addEventListener("click", () => { const item = button.parentElement; const open = item.classList.toggle("open"); button.setAttribute("aria-expanded", String(open)); button.querySelector("span").textContent = open ? "−" : "+"; })));
